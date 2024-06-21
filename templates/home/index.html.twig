@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<div>
+    <div class="grid" id="messages">
+        <article>Les derniers message apparaisse ici !</article>
+    </div>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit">Envoyer</button>
+    {{ form_end(form) }}
+</div>
+{% endblock %}
